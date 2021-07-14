@@ -1,6 +1,6 @@
 @font-face {
     font-family: "jua";
-    src: url("../font/BMJUA_otf.otf");
+    src: url("font/BMJUA_otf.otf");
 }
 div {
     font-family: "jua";
@@ -36,12 +36,22 @@ span{
     height: 50px;
 }
 #button {
-
     height: 50px;
     width: 50px;
 }
 #result {
-    margin-left: 35%;
-    float: left;
     font-size: 40px;
+    border:none;
+    background: transparent;
+}
+p {
+    margin-left: 35%;
+}
+#operator {
+    height: 50px;
+    width: 50px;
+}
+#enter {
+    height : 40px;
+    width : 50px;
 }
