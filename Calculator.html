@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>make Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+        document.getElementById("operation").addEventListener("click",calc);
+
+        function cals() {
+            one = Number(document.getElementById("one").value);
+            two = Number(document.getElementById("two").value);
+            
+            bt = document.getElementById("operator").value;
+
+            if (opr==="plus") text = one + two ;
+
+            else if(opr==="minus") text = one - two ;
+
+            else if(opr==="muti") text = one * two ;
+
+            else text = one / two;
+            
+            document.getElementById("result").innerHTML = "결과값 = " + text ;
+        }
+    </script>
+    <div id="main">단순계산기</div>
+    <div class="calculte">
+    <form>
+        <input id="one" type="text">
+        <select id="operator">
+            <option value="plus"> + </option>
+            <option value="minus"> - </option>
+            <option value="muti"> x </option>
+            <option value="divi"> % </option>
+            <option value="radicul"> √ </option>
+        </select>
+        <input id="two" type="text">
+        <input type="button" id="operation" value="확인"> <br>
+    </form>
+        <p id="result"> 결과값 =</p>
+    </div>
+
+</body>
+</html>
